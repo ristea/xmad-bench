@@ -1,0 +1,69 @@
+{
+  "exp_name": "name",
+  "exp_path": "./experiments",
+  "about_experiment": "details",
+
+  "dataset": {
+    "root_path":  "/path/to/data",
+
+    "dataset_train": "commonvoice-ro",
+    "dataset_test": "voxpopuli",
+
+    "multilingual": true,
+    "train_datasets": ["commonvoice-ro", "commonvoice-ar", "commonvoice-ru"],
+    "test_datasets": ["mailabs-en"],
+    "extract_samples": true,
+    "num_samples": 4000,
+
+    "augment_chance": 0.5,
+
+    "noise_augment": true,
+    "noise_augment_chance": 0.00,
+    "gaussian_noise_augment_chance": 0.15,
+
+    "time_augment": true,
+    "time_augment_chance": 0.20,
+
+    "spec_augm": false,
+    "spec_chance": 0.05,
+
+    "mixup_augment": false,
+    "mixup_augment_chance": 0.20,
+
+    "speed_augment": true,
+    "speed_augment_chance": 0.15,
+
+    "volume_augment": true,
+    "volume_augment_chance": 0.20,
+
+    "clipping": true,
+    "clipping_augment_chance": 0.20,
+
+    "reverb": true,
+    "reverb_augment_chance": 0.20,
+
+    "spectral_shift": true,
+    "spectral_shift_augment_chance_HP": 0.15,
+    "spectral_shift_augment_chance_LP": 0.15,
+    "spectral_shift_augment_chance_peak": 0.15,
+
+    "pitch": true,
+    "pitch_augment_chance": 0.20
+  },
+
+  "model_type": "ast",
+  "lr": 0.0005,
+  "lr_sch_step": 50,
+  "lr_sch_gamma": 0.5,
+  "weight_decay": 0.0,
+  "batch_size": 10,
+
+  "loss_function": "bce_loss",
+
+  "train_epochs": 20,
+  "eval_net_epoch": 1,
+  "save_net_epochs": 2,
+
+  "print_loss": 20,
+  "resume_training": false
+}

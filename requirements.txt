@@ -1,0 +1,8 @@
+TTS
+pandas
+tqdm
+torch
+torchaudio
+librosa
+webvtt
+pydub
