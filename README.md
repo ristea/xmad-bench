@@ -1,11 +1,8 @@
 # XMAD-Bench: Cross-Domain Multilingual Audio Deepfake Benchmark
 ### by Ioan-Paul Ciobanu, Andrei-Iulian Hiji, Nicolae-Catalin Ristea, Paul Irofti, Cristian Rusu, Radu Tudor Ionescu
 
+-----------------------------------------
 
-
-## License
-
-The source code and models are released under the Creative Common Attribution-NonCommercial-ShareAlike 4.0 International ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) license.
 
 ## Description
 Recent advances in audio generation led to an increasing number of deepfakes, making the general public more vulnerable to financial scams, identity theft, and misinformation. Audio deepfake detectors promise to 
@@ -15,12 +12,23 @@ the speakers, the generative methods, and the real audio sources are distinct ac
 Our in-domain and cross-domain experiments indicate a clear disparity between the in-domain performance of deepfake detectors, which is usually as high as $100\%$, and the cross-domain performance of the same models, which is sometimes 
 similar to random chance. Our benchmark highlights the need for the development of robust audio deepfake detectors, which maintain their generalization capacity across different languages, speakers, generative methods, and data sources.
 
+Split statistics on our data set:
+![map](resources/split_in_h.png)
+![map](resources/splits_table.png)
+
+Results obtained with various state-of-the-art methods on our data set:
+![map](resources/results_table.png)
+
+
+# Download data
+Our data is available at: https://drive.google.com/drive/folders/1PjboiIGjNWU6UeuIHrZu3ofF70o0A5-X?usp=drive_link
+
+
 ## Detection framework
 Modify the detection/config.json with the desired locations. Then run:
 ```bash
 python detection/main.py
 ```
-
 
 # Demo generation script
 
@@ -187,3 +195,7 @@ python demo_script.py \
     vc_freevc = TTS("voice_conversion_models/multilingual/vctk/freevc24")
     model_name = "tts_models/multilingual/multi-dataset/bark"
 ```
+
+# License
+
+The source code and models are released under the Creative Common Attribution-NonCommercial-ShareAlike 4.0 International ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) license.
