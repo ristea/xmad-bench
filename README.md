@@ -3,6 +3,25 @@
 
 -----------------------------------------
 
+## License
+
+The source code and models are released under the Creative Common Attribution-NonCommercial-ShareAlike 4.0 International ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) license.
+
+## Reference
+
+If you use this dataset or code in your research, please cite the corresponding paper:
+
+1. Ioan-Paul Ciobanu, Andrei-Iulian Hiji, Nicolae-Catalin Ristea, Paul Irofti, Cristian Rusu, Radu Tudor Ionescu. XMAD-Bench: Cross-Domain Multilingual Audio Deepfake Benchmark. arXiv preprint arXiv:2506.00462 (2025).
+
+Bibtex:
+```
+@article{Ciobanu2025xmad,
+  title="{XMAD-Bench: Cross-Domain Multilingual Audio Deepfake Benchmark}",
+  author={Ciobanu, Ioan-Paul and Hiji, Andrei-Iulian and Ristea, Nicolae-Catalin and Irofti, Paul and Rusu, Cristian and Ionescu, Radu Tudor},
+  journal={arXiv preprint arXiv:2506.00462},
+  year={2025}
+}
+```
 
 ## Description
 Recent advances in audio generation led to an increasing number of deepfakes, making the general public more vulnerable to financial scams, identity theft, and misinformation. Audio deepfake detectors promise to 
@@ -20,7 +39,7 @@ Results obtained with various state-of-the-art methods on our data set:
 ![map](resources/results_table.png)
 
 
-# Download data
+## Download data
 Our data is available at: https://drive.google.com/drive/folders/1PjboiIGjNWU6UeuIHrZu3ofF70o0A5-X?usp=drive_link
 
 
@@ -195,7 +214,3 @@ python demo_script.py \
     vc_freevc = TTS("voice_conversion_models/multilingual/vctk/freevc24")
     model_name = "tts_models/multilingual/multi-dataset/bark"
 ```
-
-# License
-
-The source code and models are released under the Creative Common Attribution-NonCommercial-ShareAlike 4.0 International ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)) license.
